@@ -2,27 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rayan's Portfolio</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Remix Icons for Icons -->
+    <!-- Remix Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-50 text-gray-800 font-sans">
+  <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
-    <!-- Main Layout -->
-    <div class="min-h-screen flex flex-col md:flex-row">
+    <!-- Main Layout: takes all available space except footer -->
+    <div class="flex flex-1 flex-col md:flex-row">
 
       <!-- Sidebar -->
-      <aside class="bg-white shadow md:w-1/4 w-full p-6 md:min-h-screen flex flex-col items-center">
+      <aside
+        class="bg-white shadow md:w-1/4 w-full p-6 md:min-h-screen flex flex-col items-center"
+      >
         <img
-          src="assets/profile.jpg"
+          src="./image/200810322.jpeg"
           alt="Profile"
           class="w-32 h-32 rounded-full object-cover border-4 border-yellow-400 mb-4"
         />
@@ -39,7 +41,7 @@
 
         <!-- Personal Info -->
         <div class="mt-6 w-full text-sm space-y-2">
-          <p><strong>Age:</strong> 24</p>
+          <p><strong>Age:</strong> 25</p>
           <p><strong>Nationality:</strong> BD</p>
           <p><strong>Freelance:</strong> Available</p>
           <p><strong>Location:</strong> Dhaka, Bangladesh</p>
@@ -87,16 +89,16 @@
         <a
           href="#"
           class="mt-6 inline-block bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+          >Download CV</a
         >
-          Download CV
-        </a>
       </aside>
 
       <!-- Main Content -->
-      <main class="flex-1 p-6 md:p-10">
-
+      <main class="flex-1 p-6 md:p-10 overflow-auto">
         <!-- Hero Section -->
-        <section class="flex flex-col md:flex-row items-center justify-between gap-10">
+        <section
+          class="flex flex-col md:flex-row items-center justify-between gap-10"
+        >
           <div>
             <h1 class="text-4xl font-bold leading-tight">
               I'm <span class="text-yellow-500">Rayan Adlrdard</span><br />
@@ -110,20 +112,18 @@
               <a
                 href="#"
                 class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+                >Hire Me</a
               >
-                Hire Me
-              </a>
               <a
                 href="#contact"
                 class="px-4 py-2 border border-yellow-400 rounded hover:bg-yellow-50 transition"
+                >Contact</a
               >
-                Contact
-              </a>
             </div>
           </div>
 
           <img
-            src="assets/profile.jpg"
+            src="./image/200810322.jpeg"
             alt="Hero Image"
             class="w-64 h-64 object-cover rounded-full shadow-lg"
           />
@@ -185,15 +185,12 @@
             </form>
           </div>
         </section>
-
-        <!-- Footer -->
-        <footer class="text-center py-6 bg-white shadow mt-12">
-          <p class="text-sm text-gray-600">
-            &copy; 2025 Rayan Adlrdard. All rights reserved.
-          </p>
-        </footer>
-
       </main>
     </div>
+
+    <!-- Footer outside main layout for full width -->
+    <footer class="text-center py-6 bg-gray-300 shadow mt-auto">
+      <p class="text-sm text-gray-600">&copy; 2025 Rayan Adlrdard. All rights reserved.</p>
+    </footer>
   </body>
 </html>
