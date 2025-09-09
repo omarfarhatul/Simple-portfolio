@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayan's Portfolio</title>
 
-  <!-- Main Container -->
-  <div class="min-h-screen flex flex-col md:flex-row">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Sidebar -->
-    <aside class="bg-white shadow md:w-1/4 w-full p-6 md:min-h-screen flex flex-col items-center">
-      <img src="assets/profile.jpg" alt="Profile" class="w-32 h-32 rounded-full object-cover border-4 border-yellow-400 mb-4">
-      <h2 class="text-xl font-bold text-center">Rayan Adlrdard</h2>
-      <p class="text-sm text-center text-gray-500">Front-end Developer</p>
+    <!-- Remix Icons for Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
 
-      <!-- Social Links -->
-      <div class="flex justify-center mt-4 space-x-4 text-yellow-500">
-        <i class="ri-facebook-fill"></i>
-        <i class="ri-twitter-fill"></i>
-        <i class="ri-github-fill"></i>
-        <i class="ri-linkedin-fill"></i>
-      </div>
+    <!-- Main Layout -->
+    <div class="min-h-screen flex flex-col md:flex-row">
 
-      <!-- Info -->
-      <div class="mt-6 w-full">
-        <div class="text-sm">
+      <!-- Sidebar -->
+      <aside class="bg-white shadow md:w-1/4 w-full p-6 md:min-h-screen flex flex-col items-center">
+        <img
+          src="assets/profile.jpg"
+          alt="Profile"
+          class="w-32 h-32 rounded-full object-cover border-4 border-yellow-400 mb-4"
+        />
+        <h2 class="text-xl font-bold text-center">Rayan Adlrdard</h2>
+        <p class="text-sm text-center text-gray-500">Front-end Developer</p>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center mt-4 space-x-4 text-yellow-500 text-xl">
+          <i class="ri-facebook-fill cursor-pointer"></i>
+          <i class="ri-twitter-fill cursor-pointer"></i>
+          <i class="ri-github-fill cursor-pointer"></i>
+          <i class="ri-linkedin-fill cursor-pointer"></i>
+        </div>
+
+        <!-- Personal Info -->
+        <div class="mt-6 w-full text-sm space-y-2">
           <p><strong>Age:</strong> 24</p>
           <p><strong>Nationality:</strong> BD</p>
           <p><strong>Freelance:</strong> Available</p>
@@ -36,80 +46,154 @@
         </div>
 
         <!-- Languages -->
-        <h3 class="mt-6 font-semibold">Languages</h3>
-        <div class="text-sm mt-2 space-y-2">
-          <p>English <span class="float-right">100%</span></p>
-          <div class="w-full bg-gray-200 h-2 rounded-full">
-            <div class="bg-yellow-400 h-2 w-full rounded-full"></div>
-          </div>
-          <p>Spanish <span class="float-right">85%</span></p>
-          <div class="w-full bg-gray-200 h-2 rounded-full">
-            <div class="bg-yellow-400 h-2 w-4/5 rounded-full"></div>
+        <div class="mt-6 w-full">
+          <h3 class="font-semibold mb-2">Languages</h3>
+          <div class="space-y-2 text-sm">
+            <div>
+              <p>English <span class="float-right">100%</span></p>
+              <div class="w-full h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-yellow-400 w-full rounded-full"></div>
+              </div>
+            </div>
+            <div>
+              <p>Spanish <span class="float-right">85%</span></p>
+              <div class="w-full h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-yellow-400 w-4/5 rounded-full"></div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Skills -->
-        <h3 class="mt-6 font-semibold">Skills</h3>
-        <div class="text-sm mt-2 space-y-2">
-          <p>HTML <span class="float-right">95%</span></p>
-          <div class="w-full bg-gray-200 h-2 rounded-full">
-            <div class="bg-yellow-400 h-2 w-[95%] rounded-full"></div>
-          </div>
-          <p>CSS <span class="float-right">90%</span></p>
-          <div class="w-full bg-gray-200 h-2 rounded-full">
-            <div class="bg-yellow-400 h-2 w-[90%] rounded-full"></div>
+        <div class="mt-6 w-full">
+          <h3 class="font-semibold mb-2">Skills</h3>
+          <div class="space-y-2 text-sm">
+            <div>
+              <p>HTML <span class="float-right">95%</span></p>
+              <div class="w-full h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-yellow-400 w-[95%] rounded-full"></div>
+              </div>
+            </div>
+            <div>
+              <p>CSS <span class="float-right">90%</span></p>
+              <div class="w-full h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-yellow-400 w-[90%] rounded-full"></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <a href="#" class="mt-6 inline-block bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500">Download CV</a>
-    </aside>
+        <!-- Download Button -->
+        <a
+          href="#"
+          class="mt-6 inline-block bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+        >
+          Download CV
+        </a>
+      </aside>
 
-    <!-- Main Content -->
-    <main class="flex-1 p-6 md:p-10">
+      <!-- Main Content -->
+      <main class="flex-1 p-6 md:p-10">
 
-      <!-- Hero Section -->
-      <section class="flex flex-col md:flex-row items-center justify-between">
-        <div>
-          <h1 class="text-4xl font-bold">
-            I'm <span class="text-yellow-500">Rayan Adlrdard</span><br />
-            Front-end Developer
-          </h1>
-          <p class="mt-4 text-gray-600 max-w-md">
-            I create beautiful and functional websites. Let’s build something amazing together.
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between gap-10">
+          <div>
+            <h1 class="text-4xl font-bold leading-tight">
+              I'm <span class="text-yellow-500">Rayan Adlrdard</span><br />
+              Front-end Developer
+            </h1>
+            <p class="mt-4 text-gray-600 max-w-md">
+              I create beautiful and functional websites. Let’s build something
+              amazing together.
+            </p>
+            <div class="mt-6 space-x-4">
+              <a
+                href="#"
+                class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+              >
+                Hire Me
+              </a>
+              <a
+                href="#contact"
+                class="px-4 py-2 border border-yellow-400 rounded hover:bg-yellow-50 transition"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="assets/profile.jpg"
+            alt="Hero Image"
+            class="w-64 h-64 object-cover rounded-full shadow-lg"
+          />
+        </section>
+
+        <!-- Services Section -->
+        <section class="mt-16">
+          <h2 class="text-3xl font-bold text-center mb-10">My Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded shadow text-center">
+              <i class="ri-code-line text-3xl text-yellow-500 mb-4"></i>
+              <h3 class="font-semibold text-xl">Web Development</h3>
+              <p class="text-gray-600 text-sm mt-2">
+                E-commerce, blogs, and responsive websites
+              </p>
+            </div>
+            <div class="p-6 bg-white rounded shadow text-center">
+              <i class="ri-pencil-ruler-2-line text-3xl text-yellow-500 mb-4"></i>
+              <h3 class="font-semibold text-xl">UI/UX Design</h3>
+              <p class="text-gray-600 text-sm mt-2">
+                User-first, clean and modern UI designs
+              </p>
+            </div>
+            <div class="p-6 bg-white rounded shadow text-center">
+              <i class="ri-music-line text-3xl text-yellow-500 mb-4"></i>
+              <h3 class="font-semibold text-xl">Sound Design</h3>
+              <p class="text-gray-600 text-sm mt-2">
+                Voice over, music editing & production
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 bg-gray-50 mt-16">
+          <div class="max-w-xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+            <form class="space-y-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full p-3 border border-gray-300 rounded"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full p-3 border border-gray-300 rounded"
+              />
+              <textarea
+                placeholder="Your Message"
+                class="w-full p-3 border border-gray-300 rounded h-32"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-6 bg-white shadow mt-12">
+          <p class="text-sm text-gray-600">
+            &copy; 2025 Rayan Adlrdard. All rights reserved.
           </p>
-          <div class="mt-6 space-x-4">
-            <a href="#" class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500">Hire Me</a>
-            <a href="#contact" class="px-4 py-2 border border-yellow-400 rounded hover:bg-yellow-50">Contact</a>
-          </div>
-        </div>
-        <img src="assets/profile.jpg" alt="Hero Image" class="w-64 h-64 mt-8 md:mt-0 object-cover rounded-full shadow-lg" />
-      </section>
+        </footer>
 
-      <!-- Services Section -->
-      <section class="mt-16">
-        <h2 class="text-3xl font-bold text-center mb-10">My Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="p-6 bg-white rounded shadow text-center">
-            <i class="ri-code-line text-3xl text-yellow-500 mb-4"></i>
-            <h3 class="font-semibold text-xl">Web Development</h3>
-            <p class="text-gray-600 text-sm mt-2">E-commerce, blogs, and responsive websites</p>
-          </div>
-          <div class="p-6 bg-white rounded shadow text-center">
-            <i class="ri-pencil-ruler-2-line text-3xl text-yellow-500 mb-4"></i>
-            <h3 class="font-semibold text-xl">UI/UX Design</h3>
-            <p class="text-gray-600 text-sm mt-2">User-first, clean and modern UI designs</p>
-          </div>
-          <div class="p-6 bg-white rounded shadow text-center">
-            <i class="ri-music-line text-3xl text-yellow-500 mb-4"></i>
-            <h3 class="font-semibold text-xl">Sound Design</h3>
-            <p class="text-gray-600 text-sm mt-2">Voice over, music editing & production</p>
-          </div>
-        </div>
-      </section>
-
-    </main>
-  </div>
-
-</body>
+      </main>
+    </div>
+  </body>
 </html>
